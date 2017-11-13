@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "ccff080102f7afc09cc0275b24a28c0dfcd52ba0e401b9895ec18df2f85abfe8"
+            "sha256": "ac4d57a241ef5b83dab84f76ac1ea83eaf2db709489e6fd3263cd3542ff30b15"
         },
         "host-environment-markers": {
             "implementation_name": "cpython",
@@ -62,7 +62,10 @@
             "version": "==2.1.1"
         },
         "flask-rest-jsonapi": {
-            "git": "https://github.com/brietsparks/flask-rest-jsonapi"
+            "hashes": [
+                "sha256:67b98a0dec72237d03189ceec5e92d914831fc644ecf851815a544c573c42d41"
+            ],
+            "version": "==0.12.6"
         },
         "flask-sqlalchemy": {
             "hashes": [
@@ -95,6 +98,19 @@
                 "sha256:a6be69091dac236ea9c6bc7d012beab42010fa914c459791d627dad4910eb665"
             ],
             "version": "==1.0"
+        },
+        "marshmallow": {
+            "hashes": [
+                "sha256:5f7a9ab5d5f5583fe4e071fde98a472b04fd0df868ead83012f1a3e0e54d7cdf",
+                "sha256:cf7e35ddfe8b18f8de3058fffc621921c79bb07455ad3084bfbf64caca766711"
+            ],
+            "version": "==2.13.1"
+        },
+        "marshmallow-jsonapi": {
+            "hashes": [
+                "sha256:a0691dbd772bd14cb011ccb557ce0e4714ed602dae4f900c64ac579052641f79"
+            ],
+            "version": "==0.16.0"
         },
         "python-dateutil": {
             "hashes": [
