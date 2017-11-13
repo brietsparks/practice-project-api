@@ -13,10 +13,11 @@ class Project(db.Model):
     owner_id = db.Column(db.String())
     title = db.Column(db.String())
     subtitle = db.Column(db.String())
-    skills = db.relationship('Skill', secondary=project_skills, backref='project')
+    skills = db.relationship('Skill', secondary=project_skills, backref='projects')
 
 
 class Skill(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     creator_id = db.Column(db.String())
     name = db.Column(db.String())
+    # projects = db.relationship('Project', secondary=project_skills, backref='skills')

@@ -11,7 +11,6 @@ class ProjectSchema(Schema):
 
     id = fields.Integer(dump_only=True)
     owner_id = fields.Str()
-    parent_id = fields.Integer(required=False, allow_none=True)
     title = fields.Str()
     subtitle = fields.Str()
 

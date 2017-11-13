@@ -1,6 +1,6 @@
 Migrations from scratch
-`flask db init -d ./src/migrations`
-`flask db migrate -d ./src/migrations`
+`flask db init`
+`flask db migrate`
 
 Upgrading migrations
-`flask db upgrade -d ./src/migrations`
+`flask db upgrade`
