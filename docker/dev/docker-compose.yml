@@ -13,6 +13,6 @@ services:
     volumes:
       - "../../:/var/app"
     ports:
-      - $PORT:$PORT
+      - $PORT:5000
     expose:
       - $PORT

@@ -1,32 +1,59 @@
 from flask_rest_jsonapi import ResourceDetail, ResourceList, ResourceRelationship
-from src.jsonApi.schema import ProjectSchema, SkillSchema
-from src.data.models import db, Project, Skill
+from src.jsonApi.schema import AbilitySchema, ContributionSchema, SkillSchema
+from src.data.models import db, Ability, Contribution, Skill
 from src.jsonApi.decorators import authDecorator
 
 
-class ProjectList(ResourceList):
-    schema = ProjectSchema
+class AbilityList(ResourceList):
+    schema = AbilitySchema
     data_layer = {
         'session': db.session,
-        'model': Project
+        'model': Ability
     }
     decorators = authDecorator
 
 
-class ProjectDetail(ResourceDetail):
-    schema = ProjectSchema
+class AbilityDetail(ResourceDetail):
+    schema = AbilitySchema
     data_layer = {
         'session': db.session,
-        'model': Project,
+        'model': Ability,
     }
     decorators = authDecorator
 
 
-class ProjectRelationship(ResourceRelationship):
-    schema = ProjectSchema
+class AbilityRelationship(ResourceRelationship):
+    schema = AbilitySchema
     data_layer = {
         'session': db.session,
-        'model': Project
+        'model': Ability
+    }
+    decorators = authDecorator
+
+
+class ContributionList(ResourceList):
+    schema = ContributionSchema
+    data_layer = {
+        'session': db.session,
+        'model': Contribution
+    }
+    decorators = authDecorator
+
+
+class ContributionDetail(ResourceDetail):
+    schema = ContributionSchema
+    data_layer = {
+        'session': db.session,
+        'model': Contribution,
+    }
+    decorators = authDecorator
+
+
+class ContributionRelationship(ResourceRelationship):
+    schema = ContributionSchema
+    data_layer = {
+        'session': db.session,
+        'model': Contribution
     }
     decorators = authDecorator
 
